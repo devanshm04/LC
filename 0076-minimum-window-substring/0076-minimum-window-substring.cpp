@@ -41,6 +41,11 @@ public:
             j++; // move right pointer
         }
 
-        return (minlen == INT_MAX) ? "" : s.substr(start, minlen);
+       if (minlen == INT_MAX) {
+    return "";
+} else {
+    return s.substr(start, minlen);
+}
+
     }
 };
