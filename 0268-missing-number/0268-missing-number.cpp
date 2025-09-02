@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+      int n = nums.size();
+        long long sum = 0;
+        long long org = (long long)n*(n+1)/2;
+        
+        for(int i=0;i<n;i++){
+            sum+=nums[i];
+        }
+        int result = org-sum;
+           return result;
+    }
+    
+};
